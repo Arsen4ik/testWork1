@@ -1,0 +1,8 @@
+.page-view31 {
+  min-width: 100%;
+  min-height: 100%;
+  background: url("../assets/page3-1.png");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}

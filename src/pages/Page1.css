@@ -1,0 +1,16 @@
+.page-view1 {
+  width: 100%;
+  min-height: 100%;
+  background: url("../assets/page1.png");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-text {
+  font-family: GothamPro;
+  font-size: 50px;
+  color: #0d319c;
+  margin-left: 74px;
+  margin-top: 145px;
+}
