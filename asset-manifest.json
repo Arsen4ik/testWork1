@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Arsen4ik/testWork1/static/css/main.63f1b556.chunk.css",
+    "main.js": "/Arsen4ik/testWork1/static/js/main.622e1ef7.chunk.js",
+    "main.js.map": "/Arsen4ik/testWork1/static/js/main.622e1ef7.chunk.js.map",
+    "runtime-main.js": "/Arsen4ik/testWork1/static/js/runtime-main.be96ccbf.js",
+    "runtime-main.js.map": "/Arsen4ik/testWork1/static/js/runtime-main.be96ccbf.js.map",
+    "static/js/2.95785925.chunk.js": "/Arsen4ik/testWork1/static/js/2.95785925.chunk.js",
+    "static/js/2.95785925.chunk.js.map": "/Arsen4ik/testWork1/static/js/2.95785925.chunk.js.map",
+    "index.html": "/Arsen4ik/testWork1/index.html",
+    "precache-manifest.0edf79e3dd46cd9dde3c9b1e10be2a18.js": "/Arsen4ik/testWork1/precache-manifest.0edf79e3dd46cd9dde3c9b1e10be2a18.js",
+    "service-worker.js": "/Arsen4ik/testWork1/service-worker.js",
+    "static/css/main.63f1b556.chunk.css.map": "/Arsen4ik/testWork1/static/css/main.63f1b556.chunk.css.map",
+    "static/js/2.95785925.chunk.js.LICENSE.txt": "/Arsen4ik/testWork1/static/js/2.95785925.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Arsen4ik/testWork1/static/media/Lato-Semibold.3c6cfb1a.ttf",
+    "static/media/NextPage.css": "/Arsen4ik/testWork1/static/media/NextPage.ef85b068.png",
+    "static/media/Page1.css": "/Arsen4ik/testWork1/static/media/page1.4d1293da.png",
+    "static/media/Page2.css": "/Arsen4ik/testWork1/static/media/page2.ecf43e58.png",
+    "static/media/Page31.css": "/Arsen4ik/testWork1/static/media/page3-1.337b4760.png",
+    "static/media/Page32.css": "/Arsen4ik/testWork1/static/media/page3-2.0c0b0d33.png",
+    "static/media/Page33.css": "/Arsen4ik/testWork1/static/media/page3-3.8de92630.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be96ccbf.js",
+    "static/js/2.95785925.chunk.js",
+    "static/css/main.63f1b556.chunk.css",
+    "static/js/main.622e1ef7.chunk.js"
+  ]
+}
