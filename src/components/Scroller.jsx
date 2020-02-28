@@ -10,14 +10,14 @@ class Scroller extends Component {
     touchEnd: false
   };
 
-  onTouchStart(e) {
+  onTouchStart = e => {
     this.setState({
       touchEnd: false,
       startPos: e.touches[0].clientX - this.state.position
     });
-  }
+  };
 
-  onTouchMove(e) {
+  onTouchMove = e => {
     const { position, centerPos, endPos } = this.state;
     const relPos = e.touches[0].clientX - this.state.startPos;
     if (relPos >= this.state.endPos || relPos <= 0) return;
@@ -34,9 +34,9 @@ class Scroller extends Component {
     } else {
       this.props.onChangePage3Slide(2);
     }
-  }
+  };
 
-  onTouchEnd(e) {
+  onTouchEnd = e => {
     const { position, centerPos, endPos } = this.state;
     this.setState({
       touchEnd: true
@@ -51,11 +51,11 @@ class Scroller extends Component {
     } else {
       this.setState({ position: endPos });
     }
-  }
+  };
 
   render() {
     const { position } = this.state;
-    // console.log(position);
+
     return (
       <div className="scroller">
         <div className="scroller-line">
@@ -72,9 +72,9 @@ class Scroller extends Component {
               transform: `translate(${this.state.position}px, -50%)`,
               transition: this.state.touchEnd ? "1s" : "0s"
             }}
-            onTouchStart={this.onTouchStart.bind(this)}
-            onTouchMove={this.onTouchMove.bind(this)}
-            onTouchEnd={this.onTouchEnd.bind(this)}
+            onTouchStart={this.onTouchStart}
+            onTouchMove={this.onTouchMove}
+            onTouchEnd={this.onTouchEnd}
           ></div>
         </div>
         <div className="scroller-points">

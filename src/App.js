@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 import "./App.css";
 import Page1 from "./pages/Page1";
@@ -12,26 +12,13 @@ import Scroller from "./components/Scroller";
 function App() {
   const [currentPage, setCurrentPage] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
-  //const [touchEnd, setTouchEnd] = useState(0);
-
   const [currentHorisontalPage, setCurrentHorisontalPage] = useState(0);
 
-  const page3Ref = useRef(null);
-
   const onTouchStart = e => {
-    //console.log(e.touches[0].clientY);
     setTouchStart(e.touches[0].clientY);
   };
 
   const onTouchEnd = e => {
-    console.log(
-      "touchStart",
-      touchStart,
-      "touchEnd",
-      e.changedTouches[0].clientY,
-      "diff",
-      e.changedTouches[0].clientY - touchStart
-    );
     const diff = e.changedTouches[0].clientY - touchStart;
 
     if (diff > 50 && currentPage <= 1) {
@@ -43,11 +30,10 @@ function App() {
   };
 
   const onChangePage = e => {
-    setCurrentPage(e.target.id);
+    setCurrentPage(+e.target.id);
   };
 
   const onChangePage3Slide = id => {
-    console.log("from app", id);
     setCurrentHorisontalPage(id);
   };
 
@@ -61,7 +47,6 @@ function App() {
         <Page1 />
         <Page2 />
         <div className="Page3-wrapper">
-          {/* {page3Render} */}
           {currentHorisontalPage === 0 ? (
             <Page31 />
           ) : currentHorisontalPage === 1 ? (
@@ -69,7 +54,6 @@ function App() {
           ) : (
             <Page33 />
           )}
-
           <Scroller onChangePage3Slide={onChangePage3Slide} />
         </div>
       </div>
