@@ -46,6 +46,7 @@ function App() {
       >
         <Page1 />
         <Page2 />
+
         <div className="Page3-wrapper">
           {currentHorisontalPage === 0 ? (
             <Page31 />
